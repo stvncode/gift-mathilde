@@ -46,6 +46,69 @@ export const gifts: Gift[] = [
     imageUrl: "/amateur.webp",
   },
   {
+    id: "books-11",
+    title: "Marcie - Le point de bascule",
+    category: "books",
+    description:
+      "Alors que la cinquantaine arrive, et avec elle les affres de la périménopause, Caroline se fait licencier de son travail. Constatant que plus personne ne la considère, Caroline décide de mettre à profit sa fadeur pour devenir détective privée dans une agence réputée. Ce changement de cap va la conduire jusqu'à New York sur les traces d'un mystérieux fantôme, et à la rencontre d'elle-même, en lui permettant de renouer avec sa véritable identité, celle de Marcie Bangor !",
+    link: "https://www.fnac.com/a20935268/Cati-Baur-Marcie-Le-point-de-bascule",
+    imageUrl: "/marcie.jpg",
+  },
+  {
+    id: "books-12",
+    title: "Big Mamma Pasta",
+    category: "books",
+    description:
+      "Vous savez que la sauce bolognaise provient de Bologne et que la carbonara se cuisine sans crème. Dai, mais êtes-vous certain de vraiment bien connaître la pasta italienne ? Ses centaines de formes, son nombre infini de recettes ou encore la spécialité que l'on concocte dans chaque région ?",
+    link: "https://www.amazon.fr/Big-Mamma-Pasta/dp/2501198530?source=ps-sl-shoppingads-lpcontext&psc=1&smid=A1X6FK5RDHNB96",
+    imageUrl: "/big-mama.jpg",
+  },
+  {
+    id: "bd-2",
+    title: "La nuit retrouvée",
+    category: "books",
+    description:
+      "Au cœur de la forêt des Landes, dans l'intimité d'une nuit d'été, une mère de famille apparemment sans histoires confie à sa fille un secret. Sensibilité, finesse psychologique, humour tendre... Lola Lafon et Pénélope Bagieu conjuguent leurs talents dans un récit où l'émotion naît de la justesse.",
+    link: "https://www.gallimard-bd.fr/9782075209793/la-nuit-retrouvee.html",
+    imageUrl: "/night.jpg",
+  },
+  {
+    id: "other-2",
+    title: "Combinaison en polaire",
+    category: "other",
+    description:
+      "Ultra douce et confortable, cette combinaison est confectionnée en fausse fourrure. Idéale pour rester bien au chaud, elle réhaussée de délicates borderies en forme de petits nœuds.",
+    link: "https://www.etam.com/p/combinaison-en-polaire-655611480.html",
+    imageUrl: "/polaire.png",
+  },
+  {
+    id: "other-1",
+    title: "Lampe en cristal de sel",
+    category: "other",
+    description:
+      "C’est au cours de la Préhistoire que des lacs salés se sont lentement évaporés pour donner naissance à des gisements de sels gemme. Extraits dans des mines de Pologne, ces blocs de sel brut entièrement naturels sont des pièces uniques. Du rose très pâle à l’orange flamboyant, marbré ou simplement uni, rond comme un oeuf ou majestueux comme un menhir, chaque bloc de sel, simplement creusé pour y loger une ampoule, a sa particularité. À l’intérieur de la maison, au salon comme dans la chambre, cette lampe en cristal de sel diffuse une lumière très douce, propice à une atmosphère chaleureuse et apaisante.",
+    link: "https://www.natureetdecouvertes.com/deco-maison/luminaire/lampes/lampe-en-cristal-de-sel-15131650",
+    imageUrl: "/sel.png",
+  },
+  {
+    id: "paint-2",
+    title: "Kit de peinture au numéro Mont Fuji",
+    category: "paint",
+    description:
+      "Contemplez la beauté apaisante du Mont Fuji grâce à la peinture au numéro avec ce Petit Pinceau Mont Fuji,illustré par la talentueuse graphiste de La Petite Epicerie, vous prendrez plaisir à réaliser cette oeuvre fièrement fabriquée en France !",
+    link: "https://petitpinceau.com/products/kit-de-peinture-au-numero-mont-fuji?srsltid=AfmBOoq6cL75lZqmk2cG86kka8fjTjsnSjYl2F8p9wUNxXWmbLpiKAgN",
+    imageUrl: "/mont-fugi.webp",
+  },
+  {
+    id: "paint-3",
+    title: "Kit de peinture au numéro Kyoto",
+    category: "paint",
+    description:
+      "Rendez-vous dans l’univers coloré de Kyoto avec ce Petit Pinceau Kyoto,illustré par la talentueuse graphiste de La Petite Epicerie, vous prendrez plaisir à réaliser cette oeuvre fièrement fabriquée en France !",
+    link: "https://petitpinceau.com/products/kit-de-peinture-au-numero-kyoto?_pos=1&_psq=kyo&_ss=e&_v=1.0",
+    imageUrl: "/kyoto.webp",
+  },
+  {
     id: "paint-1",
     title: "Boutiques du monde",
     category: "paint",
