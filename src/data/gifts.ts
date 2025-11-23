@@ -6,6 +6,7 @@ export type Gift = {
   link: string
   imageUrl?: string
   price?: string
+  isFavorite?: boolean
 }
 
 export const gifts: Gift[] = [
@@ -14,9 +15,10 @@ export const gifts: Gift[] = [
     title: "Le Problème avec les fantômes",
     category: "books",
     description:
-      "Combien de temps vivent les fantômes ?Un soir d’été, quatre amies dans la fin de la vingtaine se retrouvent pour prendre un verre. Il fait doux, l’ambiance est joyeuse. Il y a d'abord Anne et Irène, puis Nour arrive à son tour, suivie de Marie-Pierre. Au fil de la soirée et des anecdotes, Irène vient briser sans le vouloir cette atmosphère tendre en parlant du fantôme de leur ami Caleb, décédé l'année passée. C’est troublant, mais Irène le voit partout : dans la rue, dans le métro, à l’épicerie. Entre malaise et colère...",
+      "Combien de temps vivent les fantômes ?Un soir d'été, quatre amies dans la fin de la vingtaine se retrouvent pour prendre un verre. Il fait doux, l'ambiance est joyeuse. Il y a d'abord Anne et Irène, puis Nour arrive à son tour, suivie de Marie-Pierre. Au fil de la soirée et des anecdotes, Irène vient briser sans le vouloir cette atmosphère tendre en parlant du fantôme de leur ami Caleb, décédé l'année passée. C'est troublant, mais Irène le voit partout : dans la rue, dans le métro, à l'épicerie. Entre malaise et colère...",
     link: "https://www.fnac.com/a21422214/Mirion-Malle-Le-Probleme-avec-les-fantomes",
     imageUrl: "/Le-Probleme-avec-les-fantomes.jpg",
+    isFavorite: true,
   },
   {
     id: "books-8",
@@ -44,6 +46,7 @@ export const gifts: Gift[] = [
       "Le Manuel du Cuisinier Amateur rassemble plus de 150 recettes et techniques permettant à tout  un chacun de revisiter les plus grands classiques comme la blanquette de veau ou le hachis parmentier, de découvrir une multitude d'autres plats emblématiques du monde entier comme le ramen, le dalh ou le BLT mais aussi d'apprendre à manier des techniques et des ustensiles ultra-utiles pour briller en cuisine. ",
     link: "https://www.editionsduchene.fr/livre/manuel-du-cuisinier-amateur-tome-2-9782812321689/",
     imageUrl: "/amateur.webp",
+    isFavorite: true,
   },
   {
     id: "books-11",
@@ -71,6 +74,7 @@ export const gifts: Gift[] = [
       "Au cœur de la forêt des Landes, dans l'intimité d'une nuit d'été, une mère de famille apparemment sans histoires confie à sa fille un secret. Sensibilité, finesse psychologique, humour tendre... Lola Lafon et Pénélope Bagieu conjuguent leurs talents dans un récit où l'émotion naît de la justesse.",
     link: "https://www.gallimard-bd.fr/9782075209793/la-nuit-retrouvee.html",
     imageUrl: "/night.jpg",
+    isFavorite: true,
   },
   {
     id: "other-2",
@@ -104,9 +108,10 @@ export const gifts: Gift[] = [
     title: "Kit de peinture au numéro Kyoto",
     category: "paint",
     description:
-      "Rendez-vous dans l’univers coloré de Kyoto avec ce Petit Pinceau Kyoto,illustré par la talentueuse graphiste de La Petite Epicerie, vous prendrez plaisir à réaliser cette oeuvre fièrement fabriquée en France !",
+      "Rendez-vous dans l'univers coloré de Kyoto avec ce Petit Pinceau Kyoto,illustré par la talentueuse graphiste de La Petite Epicerie, vous prendrez plaisir à réaliser cette oeuvre fièrement fabriquée en France !",
     link: "https://petitpinceau.com/products/kit-de-peinture-au-numero-kyoto?_pos=1&_psq=kyo&_ss=e&_v=1.0",
     imageUrl: "/kyoto.webp",
+    isFavorite: true,
   },
   {
     id: "paint-1",
@@ -214,6 +219,7 @@ export const gifts: Gift[] = [
       "Le nouveau Kindle Paperwhite en noir pour emporter toute ta bibliothèque partout avec toi. Écran antireflet, étanche et avec une autonomie incroyable.",
     link: "https://www.amazon.fr/dp/B0CFPWLGF2?tag=fransite-21&linkCode=ogi&th=1",
     imageUrl: "/kindle.jpg",
+    isFavorite: true,
   },
   {
     id: "case-1",
