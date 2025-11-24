@@ -1,5 +1,5 @@
-// Storage for gift purchases using Vercel Postgres
-import { sql } from "@vercel/postgres"
+// Storage for gift purchases using Neon Postgres
+import { neon } from "@neondatabase/serverless"
 
 export type PurchaseData = {
   [giftId: string]: {
@@ -9,9 +9,19 @@ export type PurchaseData = {
   }
 }
 
+// Get SQL client
+function getSQL() {
+  if (!process.env.DATABASE_URL) {
+    throw new Error("DATABASE_URL environment variable is not set")
+  }
+  return neon(process.env.DATABASE_URL)
+}
+
 // Initialize the database table
 export async function initializeDatabase() {
   try {
+    const sql = getSQL()
+
     await sql`
       CREATE TABLE IF NOT EXISTS purchases (
         id SERIAL PRIMARY KEY,
@@ -35,7 +45,8 @@ export async function initializeDatabase() {
 
 export async function getPurchases(): Promise<PurchaseData> {
   try {
-    const { rows } = await sql`
+    const sql = getSQL()
+    const rows = await sql`
       SELECT gift_id, purchased, purchased_at, purchased_by 
       FROM purchases 
       WHERE purchased = true
@@ -43,10 +54,10 @@ export async function getPurchases(): Promise<PurchaseData> {
 
     const purchases: PurchaseData = {}
     for (const row of rows) {
-      purchases[row.gift_id] = {
-        purchased: row.purchased,
-        purchasedAt: row.purchased_at?.toISOString(),
-        purchasedBy: row.purchased_by,
+      purchases[row.gift_id as string] = {
+        purchased: row.purchased as boolean,
+        purchasedAt: (row.purchased_at as Date)?.toISOString(),
+        purchasedBy: row.purchased_by as string | undefined,
       }
     }
 
@@ -59,6 +70,7 @@ export async function getPurchases(): Promise<PurchaseData> {
 
 export async function markAsPurchased(giftId: string, purchasedBy?: string): Promise<void> {
   try {
+    const sql = getSQL()
     await sql`
       INSERT INTO purchases (gift_id, purchased, purchased_at, purchased_by)
       VALUES (${giftId}, true, NOW(), ${purchasedBy || null})
@@ -76,6 +88,7 @@ export async function markAsPurchased(giftId: string, purchasedBy?: string): Pro
 
 export async function unmarkAsPurchased(giftId: string): Promise<void> {
   try {
+    const sql = getSQL()
     await sql`
       DELETE FROM purchases 
       WHERE gift_id = ${giftId}
@@ -88,7 +101,8 @@ export async function unmarkAsPurchased(giftId: string): Promise<void> {
 
 export async function isPurchased(giftId: string): Promise<boolean> {
   try {
-    const { rows } = await sql`
+    const sql = getSQL()
+    const rows = await sql`
       SELECT purchased 
       FROM purchases 
       WHERE gift_id = ${giftId} AND purchased = true
