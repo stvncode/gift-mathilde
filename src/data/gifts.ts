@@ -46,7 +46,6 @@ export const gifts: Gift[] = [
       "Le Manuel du Cuisinier Amateur rassemble plus de 150 recettes et techniques permettant à tout  un chacun de revisiter les plus grands classiques comme la blanquette de veau ou le hachis parmentier, de découvrir une multitude d'autres plats emblématiques du monde entier comme le ramen, le dalh ou le BLT mais aussi d'apprendre à manier des techniques et des ustensiles ultra-utiles pour briller en cuisine. ",
     link: "https://www.editionsduchene.fr/livre/manuel-du-cuisinier-amateur-tome-2-9782812321689/",
     imageUrl: "/amateur.webp",
-    isFavorite: true,
   },
   {
     id: "books-11",
@@ -84,6 +83,7 @@ export const gifts: Gift[] = [
       "Ultra douce et confortable, cette combinaison est confectionnée en fausse fourrure. Idéale pour rester bien au chaud, elle réhaussée de délicates borderies en forme de petits nœuds.",
     link: "https://www.etam.com/p/combinaison-en-polaire-655611480.html",
     imageUrl: "/polaire.png",
+    isFavorite: true,
   },
   {
     id: "other-1",
@@ -102,6 +102,7 @@ export const gifts: Gift[] = [
       "Contemplez la beauté apaisante du Mont Fuji grâce à la peinture au numéro avec ce Petit Pinceau Mont Fuji,illustré par la talentueuse graphiste de La Petite Epicerie, vous prendrez plaisir à réaliser cette oeuvre fièrement fabriquée en France !",
     link: "https://petitpinceau.com/products/kit-de-peinture-au-numero-mont-fuji?srsltid=AfmBOoq6cL75lZqmk2cG86kka8fjTjsnSjYl2F8p9wUNxXWmbLpiKAgN",
     imageUrl: "/mont-fugi.webp",
+    isFavorite: true,
   },
   {
     id: "paint-3",
@@ -130,6 +131,7 @@ export const gifts: Gift[] = [
       "Découvrez un monde de possibilités avec La Specialista Arte Evo. Cet  machine expresso manuelle d’inspiration barista vous permet de contrôler l’ensemble du processus de préparation du café.",
     link: "https://www.delonghi.com/fr-fr/p/la-specialista-arte-machine-expresso-ec9255.m-la-specialista-arte-evo/EC9255.M.html?pid=0132126074",
     imageUrl: "/delonghi.png",
+    isFavorite: true,
   },
   {
     id: "mug",
@@ -139,6 +141,7 @@ export const gifts: Gift[] = [
       'Une magnifique tasse en porcelaine "Ladies Night Book Club" de Rifle Paper Co. Parfaite pour accompagner tes moments de lecture avec une bonne boisson chaude.',
     link: "https://riflepaperco.com/products/porcelain-mug-ladies-night-book-club?utm_source=21181&utm_medium=affiliate&utm_content=21181&clickId=5273990404&pj_creativeid=8-12339&pj_publisherid=21181",
     imageUrl: "/mug-rifle-paper.jpg",
+    isFavorite: true,
   },
   {
     id: "book-1",
@@ -247,6 +250,7 @@ export const gifts: Gift[] = [
       "Étui en cuir végétal luxueux avec motif floral vert de Klevercase. Élégant et éco-responsable.",
     link: "https://klevercase.com/collections/luxury-faux-leather-universal-ereader-cases/products/floral-green-faux-leather-ereader-case?variant=45084714467522",
     imageUrl: "/kindle-cuir-red.webp",
+    isFavorite: true,
   },
   {
     id: "clear-case",
@@ -265,6 +269,7 @@ export const gifts: Gift[] = [
       "Lot de 10, 20 ou 50 autocollants pour book lovers. Parfaits pour décorer ta Kindle avec style.",
     link: "https://www.etsy.com/fr/listing/4382684070/lot-de-10-20-ou-50-autocollants-de",
     imageUrl: "/sticker.jpg",
+    isFavorite: true,
   },
   {
     id: "stickers-2",
@@ -318,6 +323,7 @@ export const gifts: Gift[] = [
       "Une poignée transparente avec un magnifique motif de dragon, parfaite pour les fans de fantasy.",
     link: "https://www.etsy.com/fr/listing/1873704328/poignee-transparente-pour-kindle-dragon",
     imageUrl: "/kindle-grip-2.jpg",
+    isFavorite: true,
   },
 ]
 
