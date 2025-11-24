@@ -28,6 +28,7 @@ export const gifts: Gift[] = [
       "Après Le Manuel du Garçon Boucher, Arthur Le Caisne secoue de nouveau nos neurones et nos croyances sur la cuisine en près de 700 pourquoi et explications. Ustensiles, ingrédients, viandes, poissons et fruits de mer, légumes, préparations et cuissons sont passés au crible des remises en question. Chacune des réponses repose sur les études et expériences scientifiques les plus récentes, et est toujours livrée avec une bonne dose d’humour et de bienveillance.",
     link: "https://www.fnac.com/a13602245/Arthur-Le-Caisne-Pourquoi-les-spaghetti-bolognese-n-existent-pas",
     imageUrl: "/bolo.jpg",
+    isFavorite: true,
   },
   {
     id: "books-9",
